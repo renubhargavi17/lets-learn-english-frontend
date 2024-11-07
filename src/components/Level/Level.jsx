@@ -1,4 +1,5 @@
-import "../Level/Level.scss"
+import "../Level/Level.scss";
+
 
 function Level(){
     return(
@@ -16,9 +17,9 @@ function Level(){
                 <h3 className="advanced"> advanced</h3>
             </div>
            
-        </div>
-        </section>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Level
+export default Level;
