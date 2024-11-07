@@ -1,8 +1,4 @@
 import React from "react";
-// import arabic from "../../assets/arabic.jpeg"
-// import bonjour from '../../assets/bonjour.jpeg'
-// import hola from "../../assets/hola.png"
-// import mandarin from "../../assets/mandarin.jpeg"
 import "../Language/Language.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +22,7 @@ function Language({ setLanguage }) {
             navigate("/difficulty");
           }}
         >
-          {/* <img  src={bonjour} alt="Bonjour greetings" /> */}
+          <img  src={french} alt="Bonjour greetings"  className="logo"/>
           <h3 className="frenchTitle">French</h3>
         </div>
         <div
@@ -36,7 +32,7 @@ function Language({ setLanguage }) {
             navigate("/difficulty");
           }}
         >
-          {/* <img  src={hola} alt="Spanish greetings" /> */}
+          <img  src={spanish} alt="Spanish greetings" className="logo"/>
           <h3 className="spanishTitle">Spanish</h3>
         </div>
         <div
@@ -46,7 +42,7 @@ function Language({ setLanguage }) {
             navigate("/difficulty");
           }}
         >
-          {/* <img  src={arabic}  alt="Arabic greetings" /> */}
+          <img  src={arabic}  alt="Arabic greetings" className="logo"/>
           <h3 className="arabicTitle">Arabic</h3>
         </div>
         <div
@@ -56,7 +52,7 @@ function Language({ setLanguage }) {
             navigate("/difficulty");
           }}
         >
-          {/* <img  src={mandarin} alt="Mandarin greetings" /> */}
+          <img  src={mandarin} alt="Mandarin greetings" className="logo"/>
           <h3 className="mandarinTitle">Mandarin</h3>
         </div>
       </div>
