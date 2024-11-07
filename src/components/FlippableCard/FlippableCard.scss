@@ -3,6 +3,16 @@
   width: 17rem;
   margin-left: 0px;
   margin-top: 0px;
-  border: 1px solid mediumpurple;
   border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
 }
