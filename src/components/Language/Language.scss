@@ -1,0 +1,32 @@
+@use "../../partials/global" as *;
+
+
+.heading{
+
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.languageTitlePage{
+padding-bottom: 3rem;
+   
+}
+
+.languages{
+    display: flex;
+    justify-content: space-around;
+   padding-top: 4rem;
+   
+   
+}
+.french, .arabic, .mandarin, .spanish {
+    height: 12rem;
+    width: 12rem;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+
+}
