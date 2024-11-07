@@ -1,12 +1,14 @@
-import "../Header/Header.scss"
+import "../Header/Header.scss";
+import { Link } from "react-router-dom";
 
-function Header(){
-    return(
-        <header className="header">
-        <h1 className="title">LET'S LEARN ENGLISH</h1>
-        
-        </header>
-    )
+function Header() {
+  return (
+    <header className="header">
+      <Link to="/" className="title">
+        LET'S LEARN ENGLISH
+      </Link>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
