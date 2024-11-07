@@ -22,5 +22,18 @@
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 2rem;
+   list-style: none;
 
 }
+
+.easy, .medium, .advanced{
+    font-size: 3rem;
+    text-decoration: none;
+   
+}
+
+.easyLevel:hover,.mediumLevel:hover, .advancedLevel:hover  {
+    background-color: rgb(228, 128, 128);
+    border: solid;
+    border-color: rgb(135, 123, 123);
+  }

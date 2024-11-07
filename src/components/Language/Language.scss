@@ -39,6 +39,12 @@ padding-bottom: 3rem;
 
 }
 
+.french:hover,.arabic:hover, .mandarin:hover, .spanish:hover  {
+    background-color: rgb(228, 128, 128);
+    border: solid;
+    border-color: rgb(135, 123, 123);
+  }
+
 .logo{
     height: 5rem;
     width: 5rem;
