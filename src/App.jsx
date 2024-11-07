@@ -9,7 +9,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [language, setLanguage] = useState(null);
-  const [level, setLevel] = useState(null);
 
   return (
     <BrowserRouter>
@@ -18,11 +17,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Language setLanguage={setLanguage} />} />
-          <Route path="/difficulty" element={<Level setLevel={setLevel} />} />
-          <Route
-            path="/quiz/:language/:difficulty"
-            element={<Quiz language={language} difficulty={level} />}
-          />
+          <Route path="/difficulty" element={<Level language={language} />} />
+          <Route path="/quiz/:language/:difficulty" element={<Quiz />} />
         </Routes>
       </div>
     </BrowserRouter>
