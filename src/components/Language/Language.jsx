@@ -8,7 +8,7 @@ import "../Language/Language.scss"
 function Language(){
 return(
 <section className="languageTitlePage">
-   
+<h2 className="heading">WHAT LANGUAGE DO YOU SPEAK?</h2>
     <div className="languages">
         <div className="french">
         {/* <img  src={bonjour} alt="Bonjour greetings" /> */}

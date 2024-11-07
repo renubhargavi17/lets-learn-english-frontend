@@ -1,5 +1,3 @@
-@use "../../partials/global" as *;
-
 
 .heading{
 
@@ -7,19 +5,15 @@
     justify-content: center;
     font-size: 2rem;
 }
-.languageTitlePage{
-padding-bottom: 3rem;
-   
-}
 
-.languages{
+.levelType{
     display: flex;
     justify-content: space-around;
    padding-top: 4rem;
    
    
 }
-.french, .arabic, .mandarin, .spanish {
+.easyLevel, .mediumLevel, .advancedLevel {
     height: 12rem;
     width: 12rem;
     background-color: white;
