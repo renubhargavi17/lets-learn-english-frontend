@@ -1,45 +1,54 @@
-@use "../../partials/global" as *;
+.languageTitlePage {
+    .languages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
+    .languageCard {
+        height: 19rem;
+        width: 17rem;
+        border: 1px solid mediumpurple;
+        border-radius: 0.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+        margin: 10px;
 
-.heading{
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-}
-.languageTitlePage{
-padding-bottom: 3rem;
-   
-}
+        &.selected {
+            border-color: #646cff;
+            box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.3);
+        }
 
+        &__image {
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
 
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+            }
+        }
 
+        &__body {
+            height: 40%;
+            padding: 1rem;
+            text-align: center;
 
-.languages{
-    display: flex;
-    justify-content: space-around;
-   padding-top: 4rem;
-   
-   
-}
-.french, .arabic, .mandarin, .spanish {
-    height: 15rem;
-    width: 15rem;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    
-
-}
-
-.logo{
-    height: 5rem;
-    width: 5rem;
+            h3 {
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
+    }
 }
