@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import "./FlippableCard.scss";
 
 export default function FlippableCard({ frontText, backText }) {
   const [isFlipped, setIsFlipped] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      setIsFlipped(false);
+    };
+  }, [frontText, backText]);
 
   return (
     <div
@@ -10,7 +17,7 @@ export default function FlippableCard({ frontText, backText }) {
         setIsFlipped(!isFlipped);
       }}
     >
-      {isFlipped ? <div>{frontText}</div> : <div>{backText}</div>}
+      {!isFlipped ? <div>{frontText}</div> : <div>{backText}</div>}
     </div>
   );
 }

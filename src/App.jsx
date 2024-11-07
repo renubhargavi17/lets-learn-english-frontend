@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Language setLanguage={setLanguage} />} />
           <Route path="/difficulty" element={<Level setLevel={setLevel} />} />
           <Route
-            path="/quiz"
+            path="/quiz/:language/:difficulty"
             element={<Quiz language={language} difficulty={level} />}
           />
         </Routes>
