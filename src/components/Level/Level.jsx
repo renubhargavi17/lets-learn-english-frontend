@@ -10,10 +10,10 @@ function Level(){
                 <h3 className="easy"> easy</h3>
             </div>
             <div className="mediumLevel">
-                <h3 className="medium"> easy</h3>
+                <h3 className="medium"> medium</h3>
             </div>
             <div className="advancedLevel">
-                <h3 className="advanced"> easy</h3>
+                <h3 className="advanced"> advanced</h3>
             </div>
            
         </div>
