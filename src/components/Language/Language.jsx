@@ -6,6 +6,13 @@ import React from "react";
 import "../Language/Language.scss";
 import { useNavigate } from "react-router-dom";
 
+import arabic from "../../assets/logo/arabic.svg"
+import french from '../../assets/logo/french.svg'
+import spanish from "../../assets/logo/spanish.svg"
+import mandarin from "../../assets/logo/mandarin.svg"
+import "../Language/Language.scss"
+
+
 function Language({ setLanguage }) {
   const navigate = useNavigate();
   return (
