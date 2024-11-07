@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./Quiz.scss";
-
+import { MoveRight, MoveLeft } from "lucide-react";
 import FlippableCard from "../FlippableCard/FlippableCard";
 
 export default function Quiz() {
@@ -34,18 +34,6 @@ export default function Quiz() {
         <button
           onClick={() => {
             setCurrentQuestion((prev) => {
-              if (prev + 1 >= quiz.length) {
-                return quiz.length - 1;
-              }
-              return prev + 1;
-            });
-          }}
-        >
-          Next
-        </button>
-        <button
-          onClick={() => {
-            setCurrentQuestion((prev) => {
               if (prev - 1 < 0) {
                 return 0;
               }
@@ -53,7 +41,19 @@ export default function Quiz() {
             });
           }}
         >
-          Previous
+          <MoveLeft />
+        </button>
+        <button
+          onClick={() => {
+            setCurrentQuestion((prev) => {
+              if (prev + 1 >= quiz.length) {
+                return quiz.length - 1;
+              }
+              return prev + 1;
+            });
+          }}
+        >
+          <MoveRight />
         </button>
       </div>
     </div>
